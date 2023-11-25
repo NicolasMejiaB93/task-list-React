@@ -1,8 +1,25 @@
+/* src/app.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  transition: background-color 0.3s ease; /* Agregamos una transición suave para los cambios de modo oscuro */
+}
+
+.dark-mode #root {
+  background-color: #1a202c; /* Color de fondo en modo oscuro */
+  color: #e2e8f0; /* Color de texto en modo oscuro */
 }
 
 .logo {
@@ -40,3 +57,4 @@
 .read-the-docs {
   color: #888;
 }
+
